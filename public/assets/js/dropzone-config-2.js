@@ -17,7 +17,7 @@ Dropzone.options.realDropzone = {
         // Add server images
         var myDropzone = this;
 
-        $.get('/dropzone-laravel-image-upload/public/server-images', function(data) {
+        $.get('/server-images', function(data) {
 
             $.each(data.images, function (key, value) {
 
