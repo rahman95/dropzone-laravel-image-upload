@@ -22,7 +22,7 @@ Dropzone.options.realDropzone = {
 
                 var file = {name: value.original, size: value.size};
                 myDropzone.options.addedfile.call(myDropzone, file);
-    			myDropzone.createThumbnailFromUrl(file, 'images/icon_size/' + value.server);
+                myDropzone.createThumbnailFromUrl(file, 'images/icon_size/' + value.server);
                 myDropzone.emit("complete", file);
                 photo_counter++;
                 $("#photoCounter").text( "(" + photo_counter + ")");
