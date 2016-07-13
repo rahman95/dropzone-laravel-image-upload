@@ -57,7 +57,8 @@ class ImageRepository
 
         return Response::json([
             'error' => false,
-            'code'  => 200
+            'code'  => 200,
+            'filename' => $allowed_filename
         ], 200);
 
     }
@@ -103,15 +104,15 @@ class ImageRepository
     }
 
     /**
-     * Delete Image From Session folder, based on original filename
+     * Delete Image From Session folder, based on server created filename
      */
-    public function delete( $originalFilename)
+    public function delete( $filename )
     {
 
         $full_size_dir = Config::get('images.full_size');
         $icon_size_dir = Config::get('images.icon_size');
 
-        $sessionImage = Image::where('original_name', 'like', $originalFilename)->first();
+        $sessionImage = Image::where('filename', 'like', $filename)->first();
 
 
         if(empty($sessionImage))
