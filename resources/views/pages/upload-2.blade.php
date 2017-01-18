@@ -50,6 +50,7 @@
 
         <div class="dz-preview dz-file-preview">
             <div class="dz-image"><img data-dz-thumbnail=""></div>
+            <input type="hidden" class="serverfilename"/>
 
             <div class="dz-details">
                 <div class="dz-size"><span data-dz-size=""></span></div>
