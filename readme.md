@@ -18,22 +18,12 @@ What is covered in this project:
 When you clone this project cd into directory and then:
 
  - Copy .env.example to .env
- - ```shell
-   composer install
-   ```
- - ```shell
-   chmod -R 777 storage/ bootstrap/
-   ```
- - ```
-   php artisan key:generate
-   ```
+ - `composer install`
+ - `chmod -R 777 storage/ bootstrap/`
+ - `php artisan key:generate`
  - Fill .env file with database credentials and upload paths.
- - ```
-   php artisan migrate
-   ```
+ - `php artisan migrate`
    
 Now you are set.
-   
-   
 
 [Codingo Tuts]:https://tuts.codingo.me/laravel-5-1-and-dropzone-js-auto-image-uploads-with-removal-links/
