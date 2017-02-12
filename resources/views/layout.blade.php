@@ -30,6 +30,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="/">Upload</a></li>
                 <li><a href="/example-2">Upload-2</a></li>
+                <li><a href="/example-3">Upload-3</a></li>
             </ul>
         </div>
     </div>

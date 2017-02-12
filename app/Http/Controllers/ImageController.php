@@ -21,6 +21,11 @@ class ImageController extends Controller
         return view('pages.upload');
     }
 
+    public function getUpload3()
+    {
+        return view('pages.upload3');
+    }
+
     public function postUpload()
     {
         $photo = Input::all();
