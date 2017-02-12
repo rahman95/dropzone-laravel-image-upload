@@ -21,15 +21,15 @@
                 {!! Form::open(['url' => route('upload-post'), 'class' => 'dropzone', 'files'=>true, 'id'=>'real-dropzone']) !!}
 
                 <div class="form-group">
-                    <label for="fname">Firstname</label>
+                    <label for="fname">Firstname*</label>
                     <input type="text" class="form-control" id="fname" name="fname">
                 </div>
                 <div class="form-group">
-                    <label for="lname">Surname</label>
+                    <label for="lname">Surname*</label>
                     <input type="text" class="form-control" id="lname" name="lname">
                 </div>
                 <div class="form-group">
-                    <label for="gender">Gender</label>
+                    <label for="gender">Gender*</label>
                     <select id="gender" name="gender" class="form-control">
                       <option value='' disabled selected="">Select option</option>
                       <option value='m'>Male</option>
@@ -48,13 +48,15 @@
                 <div class="dropzone-previews" id="dropzonePreview"></div>
 
                 <h4 style="text-align: center;color:#428bca;">Drop images in this area  <span class="glyphicon glyphicon-hand-down"></span></h4>
-
+                <br>
+                <br>
                 {!! Form::close() !!}
                 <br>
                 <button id='submitfiles' class='btn btn-primary'>Submit Form</button>
             </div>
             <div class="jumbotron how-to-create">
                 <ul>
+                    <li>Attachment(s) not required</li>
                     <li>Images are uploaded as soon as you drop them</li>
                     <li>Maximum allowed size of image is 8MB</li>
                 </ul>

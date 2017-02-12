@@ -21,11 +21,25 @@ Dropzone.options.realDropzone = {
         e.preventDefault();
         e.stopPropagation();
 
-        if(myDropzone.getQueuedFiles().length > 0){
-          myDropzone.processQueue();
+        var fname = $('#fname').val();
+        var lname = $('#lname').val();
+        var gender = $('#gender').val();
+
+        if(fname.trim() == '' || lname.trim() == '' || gender.trim() ==''){
+          alert("Fill in all fields");
         }else{
-          alert('No Files to upload!');
+          if(myDropzone.getQueuedFiles().length > 0){
+            myDropzone.processQueue();
+          }else{
+            alert('No Files to upload!');
+          }
         }
+
+
+
+
+
+
 
       });
 
