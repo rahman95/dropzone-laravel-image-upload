@@ -6,7 +6,7 @@
 
 @section('footer')
     {!! HTML::script('/packages/dropzone/dropzone.js') !!}
-    {!! HTML::script('/assets/js/dropzone-config.js') !!}
+    {!! HTML::script('/assets/js/dropzone-config-3.js') !!}
 @stop
 
 @section('content')
@@ -33,7 +33,8 @@
                 <h4 style="text-align: center;color:#428bca;">Drop images in this area  <span class="glyphicon glyphicon-hand-down"></span></h4>
 
                 {!! Form::close() !!}
-
+                <br>
+                <button id='submitfiles' class='btn btn-primary'>Submit Files</button>
             </div>
             <div class="jumbotron how-to-create">
                 <ul>
