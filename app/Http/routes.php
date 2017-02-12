@@ -22,5 +22,14 @@ Route::post('upload/delete', ['as' => 'upload-remove', 'uses' =>'ImageController
 Route::get('example-2', ['as' => 'upload-2', 'uses' => 'ImageController@getServerImagesPage']);
 Route::get('server-images', ['as' => 'server-images', 'uses' => 'ImageController@getServerImages']);
 
+/**
+ * Part 3 - On Submit process Queue
+ */
 Route::get('example-3', ['as' => 'upload-3', 'uses' => 'ImageController@getUpload3']);
 Route::post('upload3', ['as' => 'upload-post3', 'uses' =>'ImageController@postUpload3']);
+
+/**
+ * Part 4 - Submit Form with other fields and upload same time.
+ */
+Route::get('example-4', ['as' => 'upload-4', 'uses' => 'ImageController@getUpload4']);
+Route::post('upload4', ['as' => 'upload-post4', 'uses' =>'ImageController@postUpload4']);
